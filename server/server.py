@@ -16,6 +16,9 @@ app = Flask(__name__)
 # Global variable to store server status for monitoring
 server_status = {"connections": 0, "tasks_processed": 0}
 
+# Global variable to store server status for monitoring
+server_status = {"connections": 0, "tasks_processed": 0}
+
 # Flask route for server status monitoring
 @app.route('/status', methods=['GET'])
 def status():
